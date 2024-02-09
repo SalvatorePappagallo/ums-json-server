@@ -1,7 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Subject } from 'rxjs';
+import {} from '../../environments/environment';
+import { environment } from '../../environments/environment';
 
+/*Non serve dato che stiamo lavorando con json-server
 export interface User {
   id: number;
   name: string;
@@ -10,16 +13,19 @@ export interface User {
   fiscalCode: string;
   phone: string;
   province: string;
-}
+}*/
 
 @Injectable({
   providedIn: 'root',
 })
 export class UserService {
+  /*Non serve dato che stiamo lavorando con json-server
   userUpdated = new Subject<User>();
   userCreated = new Subject<User>();
   userDeleted = new Subject<User>();
+  */
 
+  apiurl = environment.APIURL;
   construct(http: HttpClient) {
     
   }
