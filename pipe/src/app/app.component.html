@@ -1,0 +1,27 @@
+<div class="row justify-content-center">
+  <div class="col-auto">
+    <h1>{{title | titlecase}}</h1>
+    <table class="table table-small table-bordered table-striped">
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <td>{{ fullName | uppercase}}</td>
+        </tr>
+      </tbody>
+
+      <tbody>
+        <tr>
+          <th>Birth Date</th>
+          <td>{{ birthDate | date}}</td>
+        </tr>
+      </tbody>
+
+      <tbody>
+        <tr>
+          <th>Salary</th>
+          <td>{{ salary | currency: 'EUR'}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

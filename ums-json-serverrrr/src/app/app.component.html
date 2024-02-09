@@ -1,0 +1,32 @@
+<header>
+  <app-navbar></app-navbar>
+</header>
+
+<main class="flex-shrink-0">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <!--<h1>{{ title }}</h1>
+        <app-users-list
+          [users_list]="user"
+          (userDeleted)="onDeleteUser($event)"
+          (userToBeUpdate)="showUserForm($event)"
+        ></app-users-list>
+      </div>
+      @if(selectedUser) {
+      <div class="col">
+        <h2>User form</h2>
+        <h3>Complete filds to submit the user</h3>
+        <app-user-form (updateUser)="onUserUpdate($event)" [user]="selectedUser"></app-user-form>
+      </div>
+      }-->
+      <router-outlet>
+
+      </router-outlet>
+      </div>
+    </div>
+  </div>
+</main>
+
+<app-theme-toggler></app-theme-toggler>
+<app-footer></app-footer>
