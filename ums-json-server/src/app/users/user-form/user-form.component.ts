@@ -1,4 +1,4 @@
-import { UserService } from './../user.service';
+import { UserService } from '../../Services/user.service';
 import {
   Component,
   EventEmitter,
@@ -7,7 +7,7 @@ import {
   Output,
   inject,
 } from '@angular/core';
-import { User } from '../user.service';
+import { User } from '../../Services/user.service';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 

@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { User, UserService } from './../user.service';
+import { User, UserService } from '../../Services/user.service';
 import { Component, EventEmitter, Input, OnInit, Output, inject } from '@angular/core';
 
 /* Per il servizio è aggiunta nel file del servizio
